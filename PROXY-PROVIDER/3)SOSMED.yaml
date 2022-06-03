@@ -1,0 +1,17 @@
+proxies:
+#=============================TROJAN-GoWS
+- name: SOS
+  server: BUG
+  port: 443
+  type: trojan
+  password: PASS
+  network: ws
+  sni: HOST
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /PATH #/trojan-ws
+  headers:
+    Host: HOST
+#  interface-name: eth1/eth2/wan/wwan0
+#=========================================
