@@ -2,9 +2,9 @@ proxies:
 #===================================TROJAN
 - name: SOS
   type: trojan
-  server: sg1go.ipservers.xyz
+  server: sg2go.ipservers.xyz
   port: 443
-  password: jagoanssh-G77yi33
+  password: jagoanssh-Aoiooai
   udp: true
   sni: v27.tiktokcdn.com
   skip-cert-verify: true
