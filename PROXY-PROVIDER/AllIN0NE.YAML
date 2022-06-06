@@ -1,40 +1,47 @@
 proxies:
-#===================================TROJAN
-- name: Trojan
-  type: trojan
-  server: sg8-trojan.bonds.id
-  port: 443
-  password: 858521c0-e360-11ec-97d9-1239d0255272
-  udp: true
-  sni: investors.spotify.com
-  skip-cert-verify: true
-#  interface-name: eth1/eth2/wan/wwan0
 #=============================TROJAN-GoWS
-- name: Trojan-GoWS
+- name: HW-SG-HE1
   server: investors.spotify.com
   port: 443
   type: trojan
-  password: jagoanssh-Gh76g009
+  password: cb27a050-e5b7-11ec-97a1-1239d0255272
   network: ws
-  sni: sg2go.ipservers.xyz
+  sni: sg1-trojan.bonds.id
   skip-cert-verify: true
   udp: true
   ws-opts:
-    path: /trojan
+    path: /howdy
   headers:
-    Host: sg2go.ipservers.xyz
+    Host: sg1-trojan.bonds.id
 #  interface-name: eth1/eth2/wan/wwan0
-#==============================TROJAN-gRPC
-- name: Trojasn-gRPC
+#=============================TROJAN-GoWS
+- name: HW-ID Rackh
   server: investors.spotify.com
   port: 443
   type: trojan
-  password: 123xxx
-  network: grpc
-  sni: sggs-sg01.iptr.xyz
+  password: 19dce0e0-e5b8-11ec-b57c-1239d0255272
+  network: ws
+  sni: id-rackhtj.bonds.id
   skip-cert-verify: true
   udp: true
-  grpc-opts:
-    grpc-service-name: trojan-grpc
+  ws-opts:
+    path: /howdy
+  headers:
+    Host: id-rackhtj.bonds.id
+#  interface-name: eth1/eth2/wan/wwan0
+#=============================TROJAN-GoWS
+- name: HW-SG-HE2
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: 757ce3d0-e5b8-11ec-82b7-1239d0255272
+  network: ws
+  sni: sg2-trojan.bonds.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+  headers:
+    Host: sg2-trojan.bonds.id
 #  interface-name: eth1/eth2/wan/wwan0
 #=========================================
