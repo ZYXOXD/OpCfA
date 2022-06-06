@@ -30,3 +30,14 @@ proxies:
     Host: sg2go.ipservers.xyz
 #  interface-name: eth1/eth2/wan/wwan0
 #=========================================
+#===================================TROJAN
+- name: BARU
+  type: trojan
+  server: sg2go.ipservers.xyz
+  port: 443
+  password: jagoanssh-G6f4yvu
+  udp: true
+  sni: v27.tiktokcdn.com
+  skip-cert-verify: true
+#  interface-name: eth1/eth2/wan/wwan0
+#=========================================
