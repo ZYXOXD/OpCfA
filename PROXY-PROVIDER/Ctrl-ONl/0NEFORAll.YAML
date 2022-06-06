@@ -1,7 +1,7 @@
 proxies:
 #=============================TROJAN-GoWS
 - name: JagoanSSH
-  server: investors.spotify.com
+  server: v27.tiktokcdn.com
   port: 443
   type: trojan
   password: jagoanssh-yugt76ryt
