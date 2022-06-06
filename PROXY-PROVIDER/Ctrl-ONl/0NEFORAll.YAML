@@ -1,10 +1,25 @@
 proxies:
 #=============================TROJAN-GoWS
-- name: JagoanSSH
+- name: Jagoan1
   server: v27.tiktokcdn.com
   port: 443
   type: trojan
-  password: jagoanssh-yugt76ryt
+  password: jagoanssh-Aoipooia
+  network: ws
+  sni: sg2go.ipservers.xyz
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan
+  headers:
+    Host: sg2go.ipservers.xyz
+#  interface-name: eth1/eth2/wan/wwan0
+#=============================TROJAN-GoWS
+- name: Jagoan2
+  server: v27.tiktokcdn.com
+  port: 443
+  type: trojan
+  password: jagoanssh-G6f4yvu
   network: ws
   sni: sg2go.ipservers.xyz
   skip-cert-verify: true
