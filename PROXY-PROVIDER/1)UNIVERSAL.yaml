@@ -1,40 +1,12 @@
 proxies:
 #===================================TROJAN
-- name: Trojan
+- name: UNIV
   type: trojan
-  server: HOST
+  server: sg1go.ipservers.xyz
   port: 443
-  password: PASS
+  password: jagoanssh-G77yi33
   udp: true
-  sni: BUG
+  sni: investors.spotify.com
   skip-cert-verify: true
-#  interface-name: eth1/eth2/wan/wwan0
-#=============================TROJAN-GoWS
-- name: Trojan-GoWS
-  server: BUG
-  port: 443
-  type: trojan
-  password: PASS
-  network: ws
-  sni: HOST
-  skip-cert-verify: true
-  udp: true
-  ws-opts:
-    path: /PATH #/trojan-ws
-  headers:
-    Host: HOST
-#  interface-name: eth1/eth2/wan/wwan0
-#==============================TROJAN-gRPC
-- name: Trojasn-gRPC
-  server: HOST
-  port: 443
-  type: trojan
-  password: PASS
-  network: grpc
-  sni: BUG
-  skip-cert-verify: true
-  udp: true
-  grpc-opts:
-    grpc-service-name: PATH #trojan-grpc
 #  interface-name: eth1/eth2/wan/wwan0
 #=========================================
