@@ -1,17 +1,12 @@
 proxies:
-#=============================TROJAN-GoWS
+#===================================TROJAN
 - name: GM
-  server: BUG
-  port: 443
   type: trojan
-  password: PASS
-  network: ws
-  sni: HOST
-  skip-cert-verify: true
+  server: sg1go.ipservers.xyz
+  port: 443
+  password: jagoanssh-G77yi33
   udp: true
-  ws-opts:
-    path: /PATH #/trojan-ws
-  headers:
-    Host: HOST
+  sni: investors.spotify.com
+  skip-cert-verify: true
 #  interface-name: eth1/eth2/wan/wwan0
 #=========================================
