@@ -1,6 +1,6 @@
 proxies:
 #===================================TROJAN
-- name: UNIV
+- name: STR
   type: trojan
   server: sg1go.ipservers.xyz
   port: 443
