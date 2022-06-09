@@ -6,7 +6,7 @@ proxies:
   port: 443
   password: jagoanssh-Aoiooai
   udp: true
-  sni: v27.tiktokcdn.com
+  sni: investors.spotify.com
   skip-cert-verify: true
 #  interface-name: eth1/eth2/wan/wwan0
 #=========================================
