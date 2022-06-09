@@ -1,7 +1,7 @@
 proxies:
 #=============================TROJAN-GoWS
 - name: Jagoan1
-  server: zendesk4.tiktok.com
+  server: investors.spotify.com
   port: 443
   type: trojan
   password: jagoanssh-Aoipooia
@@ -16,7 +16,7 @@ proxies:
 #  interface-name: eth1/eth2/wan/wwan0
 #=============================TROJAN-GoWS
 - name: Jagoan2
-  server: zendesk4.tiktok.com
+  server: investors.spotify.com
   port: 443
   type: trojan
   password: jagoanssh-G6f4yvu
