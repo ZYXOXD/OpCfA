@@ -1,7 +1,7 @@
 proxies:
 #=============================TROJAN-GoWS
 - name: HW-SG-HE1
-  server: zendesk4.tiktok.com
+  server: investors.spotify.com
   port: 443
   type: trojan
   password: cb27a050-e5b7-11ec-97a1-1239d0255272
@@ -16,7 +16,7 @@ proxies:
 #  interface-name: eth1/eth2/wan/wwan0
 #=============================TROJAN-GoWS
 - name: HW-ID Rackh
-  server: zendesk4.tiktok.com
+  server: investors.spotify.com
   port: 443
   type: trojan
   password: 19dce0e0-e5b8-11ec-b57c-1239d0255272
@@ -31,7 +31,7 @@ proxies:
 #  interface-name: eth1/eth2/wan/wwan0
 #=============================TROJAN-GoWS
 - name: HW-SG-HE2
-  server: zendesk4.tiktok.com
+  server: investors.spotify.com
   port: 443
   type: trojan
   password: 757ce3d0-e5b8-11ec-82b7-1239d0255272
