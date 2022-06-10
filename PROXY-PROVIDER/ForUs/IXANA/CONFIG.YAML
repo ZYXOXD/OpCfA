@@ -125,7 +125,7 @@ proxy-providers:
  #----------------------------------------------------------
   0NEFORAll:
     type: http #http/file
-    url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/AllIN0NE.YAML"
+    url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/ForUs/IXANA/AllIN0NE.YAML"
     interval: 3690
     path: "./AllIN0NE.YAML" #/proxy_provider
     health-check:
