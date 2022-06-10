@@ -136,7 +136,7 @@ proxy-providers:
  #----------------------------------------------------------
   Universal:
     type: http #http/file
-    url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/1)UNIVERSAL.yaml"
+    url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/ForUs/IXANA/1)UNIVERSAL.yaml"
     interval: 3690
     path: "./1)UNIVERSAL.yaml" #/proxy_provider
     health-check:
@@ -146,7 +146,7 @@ proxy-providers:
  #----------------------------------------------------------
   Streaming:
     type: http #http/file
-    url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/2)STREAM.yaml"
+    url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/ForUs/IXANA/2)STREAM.yaml"
     interval: 3690
     path: "./2)STREAM.yaml" #/proxy_provider
     health-check:
@@ -156,7 +156,7 @@ proxy-providers:
  #----------------------------------------------------------
   Sosmed:
     type: http #http/file
-    url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/3)SOSMED.yaml"
+    url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/ForUs/IXANA/3)SOSMED.yaml"
     interval: 3690
     path: "./3)SOSMED.yaml" #/proxy_provider
     health-check:
@@ -166,7 +166,7 @@ proxy-providers:
  #----------------------------------------------------------
   Gaming:
     type: http #http/file
-    url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/4)GAMING.yaml"
+    url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/ForUs/IXANA/4)GAMING.yaml"
     interval: 3690
     path: "./4)GAMING.yaml" #/proxy_provider
     health-check:
