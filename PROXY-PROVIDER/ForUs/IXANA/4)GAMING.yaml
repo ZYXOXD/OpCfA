@@ -1,0 +1,71 @@
+proxies:
+#====================================TROJAN-G0
+- name: Trojan ws jagoan ssh
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: jagoanssh-Aoioio
+  network: ws
+  sni: sg2go.ipservers.xyz
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+   path: /trojan
+  host: sg3go.ipservers.xyz
+#  interface-name: eth1/eth2/wwan0
+
+- name: Trojan ws jagoan ssh go game
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: jagoanssh-Aoioai
+  network: ws
+  sni: sg2go.ipservers.xyz
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+   path: /trojan
+  host: sg3go.ipservers.xyz
+#  interface-name: eth1/eth2/wwan0
+
+- name: Trojan ws jagoan ssh v go game
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: jagoanssh-Aoiooai
+  network: ws
+  sni: sg2go.ipservers.xyz
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+   path: /trojan
+  host: sg3go.ipservers.xyz
+#  interface-name: eth1/eth2/wwan0
+
+- name: Trojan ws jagoan ssh vi go game
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: jagoanssh-Aioaio
+  network: ws
+  sni: sg2go.ipservers.xyz
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+   path: /trojan
+  host: sg3go.ipservers.xyz
+#  interface-name: eth1/eth2/wwan0
+
+- name: Trojan ws jagoan ssh vii go game
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: jagoanssh-Aoipooai
+  network: ws
+  sni: sg2go.ipservers.xyz
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+   path: /trojan
+  host: sg3go.ipservers.xyz
+#  interface-name: eth1/eth2/wwan0
