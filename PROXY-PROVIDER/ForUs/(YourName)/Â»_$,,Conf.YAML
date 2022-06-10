@@ -1,6 +1,6 @@
-#----------------------------------------------------------
-############################################>_CONFIGURATION
-#----------------------------------------------------------
+#------------------------------------------------------------
+##############################################>_CONFIGURATION
+#------------------------------------------------------------
 port: 7890
 # Port of HTTP(S) proxy server on the local end.
 socks-port: 7891
@@ -25,7 +25,7 @@ ipv6: false #false= resolver won't translate hostnames to IPv6 addresses.
 external-controller: 0.0.0.0:9090 #127.0.0.1:9090
 external-ui: "/usr/share/openclash/dashboard" #http://{{external-controller}}/ui
 secret: ByME
-#----------------------------------------------------------
+#------------------------------------------------------------
 tun:
   enable: true
   stack: system #/gvisor
@@ -43,16 +43,16 @@ tun:
 # It is recommended to use `interface-name`, but
 # if `auto detect interface: true`, will conflict with `interface-name`
   auto-detect-interface: true
-#----------------------------------------------------------
+#------------------------------------------------------------
 profile:
   store-selected: true #/false
   # Store the `select` results in $HOME/.config/clash/.cache
   # set false If you don't want this behavior
   # when two different configurations have groups with the same name, the selected values are shared.
   store-fake-ip: true # persistence fake-ip.
-#----------------------------------------------------------
-###############################################>_ADS-BLOCKS
-#----------------------------------------------------------
+#------------------------------------------------------------
+#################################################>_ADS-BLOCKS
+#------------------------------------------------------------
 dns:
   enable: true
   listen: 127.0.0.1:7894 #0.0.0.0:7894
@@ -87,9 +87,9 @@ dns:
     - 1.1.1.1
     - 8.8.8.8
     - 8.8.4.4
-#----------------------------------------------------------
-##########################################>_PROXY-PR0VIDERS
-#----------------------------------------------------------
+#------------------------------------------------------------
+############################################>_PROXY-PR0VIDERS
+#------------------------------------------------------------
 proxy-providers:
  #For example you can use 'type' from URL/FILE:
  #***********************************************************
@@ -103,7 +103,7 @@ proxy-providers:
  #    interval: 600
  #    #lazy: true
  #    url: http://www.gstatic.com/generate_204
- #----------------------------------------------------------
+ #-----------------------------------------------------------
  #PP-NAME: #(FILE)
  #  type: file
  #  path: "./Example-PP.yaml"
@@ -111,7 +111,7 @@ proxy-providers:
  #    enable: true
  #    interval: 36000
  #    url: http://www.gstatic.com/generate_204
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   AllIN0NE:
     type: http #http/file
     url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/Ctrl-ONl/0NEFORAll.YAML"
@@ -122,7 +122,7 @@ proxy-providers:
       interval: 443
       #lazy: true
       url: http://www.gstatic.com/generate_204
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   0NEFORAll:
     type: http #http/file
     url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/AllIN0NE.YAML"
@@ -133,7 +133,7 @@ proxy-providers:
       interval: 443
       #lazy: true
       url: http://www.gstatic.com/generate_204
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   Universal:
     type: http #http/file
     url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/1)UNIVERSAL.yaml"
@@ -143,7 +143,7 @@ proxy-providers:
       enable: true
       interval: 443
       url: http://www.gstatic.com/generate_204     
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   Streaming:
     type: http #http/file
     url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/2)STREAM.yaml"
@@ -153,7 +153,7 @@ proxy-providers:
       enable: true
       interval: 443
       url: http://www.gstatic.com/generate_204      
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   Sosmed:
     type: http #http/file
     url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/3)SOSMED.yaml"
@@ -163,7 +163,7 @@ proxy-providers:
       enable: true
       interval: 443
       url: http://www.gstatic.com/generate_204      
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   Gaming:
     type: http #http/file
     url: "https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/PROXY-PROVIDER/4)GAMING.yaml"
@@ -173,9 +173,9 @@ proxy-providers:
       enable: true
       interval: 443
       url: http://www.gstatic.com/generate_204
-#----------------------------------------------------------
-#############################################>_PROXY-GROUPS
-#----------------------------------------------------------
+#------------------------------------------------------------
+###############################################>_PROXY-GROUPS
+#------------------------------------------------------------
 proxy-groups:
  #Multiple options for 'type' in Proxy Groups:
  #***********************************************************
@@ -189,7 +189,7 @@ proxy-groups:
  #  - PP
  #  proxies:
  #  - DIRECT
- #----------------------------------------------------------
+ #-----------------------------------------------------------
  #2#(load-balance)the request of the same eTLD+1 will be dial to the same proxy.
  #- name: PG-NAME
  #  type: load-balance
@@ -199,7 +199,7 @@ proxy-groups:
  #  interval: 300
  #  use:
  #  - PP  
- #----------------------------------------------------------
+ #-----------------------------------------------------------
  #3#(url-test)select which proxy will be used by benchmarking speed to a URL.
  #- name: PG-NAME
  #  type: url-test
@@ -210,7 +210,7 @@ proxy-groups:
  #  interval: 300
  #  use:
  #  - PP
- #----------------------------------------------------------
+ #-----------------------------------------------------------
  #4#(relay)chains the proxies. proxies shall not contain a relay. No UDP support.
  #- name: PG-NAME
  #  type: relay
@@ -218,7 +218,7 @@ proxy-groups:
  #  interval: 300
  #  use:
  #  - PP
- #----------------------------------------------------------
+ #-----------------------------------------------------------
  #5#(fallback)selects an available policy by priority. The availability is tested by accessing an URL, just like an auto url-test group.
  #- name: PG-NAME
  #  type: fallback
@@ -227,7 +227,7 @@ proxy-groups:
  #  interval: 300
  #  use:
  #  - PP 
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   - name: UNIVERSAL
     type: load-balance
     strategy: round-robin
@@ -238,7 +238,7 @@ proxy-groups:
     - Universal
     - 0NEFORAll
     - AllIN0NE
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   - name: STREAMS
     type: load-balance
     strategy: round-robin
@@ -249,7 +249,7 @@ proxy-groups:
     - Streaming
     - 0NEFORAll
     - AllIN0NE
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   - name: SOSMED
     type: load-balance
     strategy: round-robin
@@ -260,7 +260,7 @@ proxy-groups:
     - Sosmed
     - 0NEFORAll
     - AllIN0NE
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   - name: GAMING
     type: load-balance
     strategy: round-robin
@@ -271,7 +271,7 @@ proxy-groups:
     - Gaming
     - 0NEFORAll
     - AllIN0NE
-#----------------------------------------------------------
+#------------------------------------------------------------
   - name: XTRA
     type: select
     disable-udp: false
@@ -282,9 +282,9 @@ proxy-groups:
     - AllIN0NE
     proxies:
     - DIRECT
-#----------------------------------------------------------
-####################################################>_RULES
-#----------------------------------------------------------
+#------------------------------------------------------------
+######################################################>_RULES
+#------------------------------------------------------------
 rules:
  - IP-CIDR,192.168.1.1/7,DIRECT,no-resolve
  - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
@@ -296,9 +296,9 @@ rules:
  - RULE-SET,RP-Gaming,GAMING
  - RULE-SET,XTRA-Rule,XTRA
  - MATCH,UNIVERSAL
-#----------------------------------------------------------
-##########################################>_RULES-PR0VIDERS
-#----------------------------------------------------------
+#------------------------------------------------------------
+############################################>_RULES-PR0VIDERS
+#------------------------------------------------------------
 rule-providers:
  #You can use Config rules.yaml from file directory or url, for example:
  #***********************************************************
@@ -308,47 +308,47 @@ rule-providers:
  #  path: "./Example-RP.yaml"
  #  url: URL
  #  interval: 3600
- #----------------------------------------------------------
+ #-----------------------------------------------------------
  #RP-NAME: #(FILE)
  #  type: file
  #  behavior: classical
  #  path: "./Example-RP.yaml"
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   XTRA-Rule:
     type: http #http/file
     behavior: classical
     path: "./XTRA.rules.yaml" #/rule_provider/XTRA/XTRA_WL
     url: https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/RULES-PROVIDER/TSEL-RULES/XTRA/XTRA_WL/XTRA.rules.yaml
     interval: 3690
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   RP-Direct:
     type: http #http/file
     behavior: classical
     path: "./direct.yaml" #/rule_provider/N-ETC/!
     url: https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/RULES-PROVIDER/N-ETC/!/direct.yaml
     interval: 3690
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   RP-Reject:
     type: http #http/file
     behavior: classical
     path: "./reject.yaml" #/rule_provider/N-ETC/!
     url: https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/RULES-PROVIDER/N-ETC/!/reject.yaml
     interval: 3690
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   RP-Stream:
     type: http #http/file
     behavior: classical
     path: "./STREAMING.rules.yaml" #/rule_provider/XTRA/XTRA_WL
     url: https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/RULES-PROVIDER/TSEL-RULES/XTRA/XTRA_WL/STREAMING.rules.yaml
     interval: 3690
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   RP-Sosmed:
     type: http #http/file
     behavior: classical
     path: "./SOSMED.rules.yaml" #/rule_provider/XTRA/XTRA_WL
     url: https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/RULES-PROVIDER/TSEL-RULES/XTRA/XTRA_WL/SOSMED.rules.yaml
     interval: 3690
- #----------------------------------------------------------
+ #-----------------------------------------------------------
   RP-Gaming:
     type: http #http/file
     behavior: classical
@@ -356,7 +356,7 @@ rule-providers:
     url: https://raw.githubusercontent.com/ZYXOXD/OpCfA/Conf-by-UNME/RULES-PROVIDER/TSEL-RULES/XTRA/XTRA_WL/GAMING.rules.yaml
     interval: 3690
 #----------------------------------------------------------
-#---------------THANKS TO ALLAH WA RASULULLAH--------------
-#---------------ALSO THANKS TO DEVS OPENCLASH--------------
-#---------------AND OFCOURSE FOR YOUANDME TOO--------------
+#----------------THANKS TO ALLAH WA RASULULLAH---------------
+#----------------ALSO THANKS TO DEVS OPENCLASH---------------
+#----------------AND OFCOURSE FOR YOUANDME TOO---------------
 #----------------------------------------------------------
