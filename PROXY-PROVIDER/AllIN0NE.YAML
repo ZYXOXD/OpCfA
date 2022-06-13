@@ -15,19 +15,19 @@ proxies:
     Host: sg1-trojan.bonds.id
 #  interface-name: eth1/eth2/wan/wwan0
 #=============================TROJAN-GoWS
-- name: HW-ID Rackh
+- name: HW-17june
   server: investors.spotify.com
   port: 443
   type: trojan
-  password: 19dce0e0-e5b8-11ec-b57c-1239d0255272
+  password: b07cfe80-eb61-11ec-a720-1239d0255272
   network: ws
-  sni: id-rackhtj.bonds.id
+  sni: w11.udpgw.com
   skip-cert-verify: true
   udp: true
   ws-opts:
     path: /howdy
   headers:
-    Host: id-rackhtj.bonds.id
+    Host: w11.udpgw.com
 #  interface-name: eth1/eth2/wan/wwan0
 #=============================TROJAN-GoWS
 - name: HW-SG-HE2
