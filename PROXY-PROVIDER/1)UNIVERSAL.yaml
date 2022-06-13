@@ -1,6 +1,21 @@
 proxies:
 #=============================TROJAN-GoWS
-- name: UNIV
+- name: UNIV1
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: jagoanssh-oiyjyhtgfd
+  network: ws
+  sni: sg1go.ipservers.xyz
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan
+  headers:
+    Host: sg1go.ipservers.xyz
+#  interface-name: eth1/eth2/wan/wwan0
+#=============================TROJAN-GoWS
+- name: UNIV2
   server: investors.spotify.com
   port: 443
   type: trojan
@@ -15,33 +30,48 @@ proxies:
     Host: sg2go.ipservers.xyz
 #  interface-name: eth1/eth2/wan/wwan0
 #=============================TROJAN-GoWS
-- name: UNIV2
-  server: investors.spotify.com
-  port: 443
-  type: trojan
-  password: 16099e70-eab6-11ec-809f-1239d0255272
-  network: ws
-  sni: trojan1.udpgw.com
-  skip-cert-verify: true
-  udp: true
-  ws-opts:
-    path: /howdy
-  headers:
-    Host: trojan1.udpgw.com
-#  interface-name: eth1/eth2/wan/wwan0
-#=============================TROJAN-GoWS
 - name: UNIV3
   server: investors.spotify.com
   port: 443
   type: trojan
-  password: 27361d50-eab6-11ec-ad6b-1239d0255272
+  password: 23be4530-eac9-11ec-8037-1239d0255272
   network: ws
-  sni: trojan1.udpgw.com
+  sni: sg1-trojan.bonds.id
   skip-cert-verify: true
   udp: true
   ws-opts:
     path: /howdy
   headers:
-    Host: trojan1.udpgw.com
+    Host: sg1-trojan.bonds.id
+#  interface-name: eth1/eth2/wan/wwan0
+#=============================TROJAN-GoWS
+- name: UNIV4
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: 5e556980-eac9-11ec-a1fa-1239d0255272
+  network: ws
+  sni: sg6-trojan.bonds.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+  headers:
+    Host: sg6-trojan.bonds.id
+#  interface-name: eth1/eth2/wan/wwan0
+#=============================TROJAN-GoWS
+- name: UNIV5
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: a1c6aef0-eac9-11ec-b4f0-1239d0255272
+  network: ws
+  sni: sg8-trojan.bonds.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+  headers:
+    Host: sg8-trojan.bonds.id
 #  interface-name: eth1/eth2/wan/wwan0
 #=========================================
