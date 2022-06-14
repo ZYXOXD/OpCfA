@@ -1,6 +1,6 @@
 proxies:
 #==============================TROJAN-gRPC
-- name: STR+
+- name: STR1
   server: gf-sg01.iptr.xyz
   port: 443
   type: trojan
@@ -12,3 +12,45 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
 #  interface-name: eth1/eth2/wan/wwan0
+#===================================TROJAN
+- name: STR2
+  type: trojan
+  server: gf-sg01.iptr.xyz
+  port: 443
+  password: 123xxx
+  udp: true
+  sni: investors.spotify.com
+  skip-cert-verify: true
+#  interface-name: eth1/eth2/wan/wwan0
+#=============================TROJAN-GoWS
+- name: STR3
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: 123xxx
+  network: ws
+  sni: gf-sg01.iptr.xyz
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan-ws
+  headers:
+    Host: gf-sg01.iptr.xyz
+#  interface-name: eth1/eth2/wan/wwan0
+#=========================================
+#=============================TROJAN-GoWS
+- name: HW-SG-UDPGW
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: e383d750-eb9c-11ec-a3af-1239d0255272
+  network: ws
+  sni: sg8-trojan.bonds.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+  headers:
+    Host: sg8-trojan.bonds.id
+#  interface-name: eth1/eth2/wan/wwan0
+#=========================================
