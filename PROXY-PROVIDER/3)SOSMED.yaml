@@ -4,14 +4,14 @@ proxies:
   server: investors.spotify.com
   port: 443
   type: trojan
-  password: jagoanssh-Aoiooai
+  password: jagoanssh-uiyttyuui578
   network: ws
-  sni: sg2go.ipservers.xyz
+  sni: sg1go.ipservers.xyz
   skip-cert-verify: true
   udp: true
   ws-opts:
     path: /trojan
   headers:
-    Host: sg2go.ipservers.xyz
+    Host: sg1go.ipservers.xyz
 #  interface-name: eth1/eth2/wan/wwan0
 #=========================================
