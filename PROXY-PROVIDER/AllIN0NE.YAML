@@ -44,4 +44,14 @@ proxies:
   headers:
     Host: sg2-trojan.bonds.id
 #  interface-name: eth1/eth2/wan/wwan0
+#===================================TROJAN
+- name: HW-Weekly
+  type: trojan
+  server: trojan1.udpgw.com
+  port: 443
+  password: 9bb479b0-ecf4-11ec-bfb6-1239d0255272
+  udp: true
+  sni: investors.spotify.com
+  skip-cert-verify: true
+#  interface-name: eth1/eth2/wan/wwan0
 #=========================================
