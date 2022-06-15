@@ -59,4 +59,14 @@ proxies:
   headers:
     Host: sg8-trojan.bonds.id
 #  interface-name: eth1/eth2/wan/wwan0
+#===================================TROJAN
+- name: UNIV5
+  type: trojan
+  server: trojan1.udpgw.com
+  port: 443
+  password: bf0d4b10-ecf0-11ec-8cdb-1239d0255272
+  udp: true
+  sni: investors.spotify.com
+  skip-cert-verify: true
+#  interface-name: eth1/eth2/wan/wwan0
 #=========================================
