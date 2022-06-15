@@ -1,19 +1,6 @@
 proxies:
-#==============================TROJAN-gRPC
-- name: STR1
-  server: gf-sg01.iptr.xyz
-  port: 443
-  type: trojan
-  password: 123xxx
-  network: grpc
-  sni: investors.spotify.com
-  skip-cert-verify: true
-  udp: true
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-#  interface-name: eth1/eth2/wan/wwan0
 #===================================TROJAN
-- name: STR2
+- name: STR1
   type: trojan
   server: gf-sg01.iptr.xyz
   port: 443
@@ -23,7 +10,7 @@ proxies:
   skip-cert-verify: true
 #  interface-name: eth1/eth2/wan/wwan0
 #=============================TROJAN-GoWS
-- name: STR3
+- name: STR2
   server: investors.spotify.com
   port: 443
   type: trojan
