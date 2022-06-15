@@ -25,6 +25,6 @@ proxies:
   skip-cert-verify: true
   udp: true
   grpc-opts:
-    grpc-service-name: trojan
+    grpc-service-name: trojan-ws
 #  interface-name: eth1/eth2/wan/wwan0
 #=========================================
