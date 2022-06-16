@@ -14,17 +14,4 @@ proxies:
   headers:
     Host: sg1go.ipservers.xyz
 #  interface-name: eth1/eth2/wan/wwan0
-#==============================TROJAN-gRPC
-- name: Jago-Test-gRPC
-  server: sg1go.ipservers.xyz
-  port: 443
-  type: trojan
-  password: jagoanssh-Rcg65gfrg
-  network: grpc
-  sni: investors.spotify.com
-  skip-cert-verify: true
-  udp: true
-  grpc-opts:
-    grpc-service-name: trojan-ws
-#  interface-name: eth1/eth2/wan/wwan0
 #=========================================
