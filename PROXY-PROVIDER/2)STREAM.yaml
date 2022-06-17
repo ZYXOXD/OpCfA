@@ -8,7 +8,7 @@ proxies:
   udp: true
   sni: investors.spotify.com
   skip-cert-verify: true
-  interface-name: eth2
+  #interface-name: eth2
 #=============================TROJAN-GoWS
 - name: STR2
   server: investors.spotify.com
@@ -23,7 +23,7 @@ proxies:
     path: /trojan-ws
   headers:
     Host: gf-sg01.iptr.xyz
-  interface-name: eth2
+  #interface-name: eth2
 #=========================================
 #=============================TROJAN-GoWS
 - name: HW-SG-UDPGW
@@ -39,5 +39,5 @@ proxies:
     path: /howdy
   headers:
     Host: sg8-trojan.bonds.id
-  interface-name: eth2
+  #interface-name: eth2
 #=========================================
