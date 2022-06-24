@@ -52,7 +52,7 @@ proxies:
   type: trojan
   password: 123xxx
   network: grpc
-  sni: blog.clova.line.me
+  sni: investors.spotify.com
   skip-cert-verify: true
   udp: true
   grpc-opts:
