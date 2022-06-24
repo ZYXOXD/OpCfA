@@ -15,3 +15,13 @@ proxies:
     Host: sg1-trojan.bonds.id
 #  interface-name: eth1/eth2/wan/wwan0
 #=========================================
+#===================================TROJAN
+- name: GM-BizBan
+  type: trojan
+  server: id5-trojan.bonds.id
+  port: 443
+  password: b88063b0-f412-11ec-87ad-1239d0255272
+  udp: true
+  sni: blog.clova.line.me
+  skip-cert-verify: true
+#  interface-name: eth1/eth2/wan/wwan0
