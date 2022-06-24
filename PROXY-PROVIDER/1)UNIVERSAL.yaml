@@ -45,13 +45,13 @@ proxies:
     Host: sg3-trojan.bonds.id
 #  interface-name: eth1/eth2/wan/wwan0
 #===================================TROJAN
-- name: UNIVA
+- name: UNIV4
   type: trojan
   server: trojan2.udpgw.com
   port: 443
   password: 03f86eb0-f411-11ec-abc7-1239d0255272
   udp: true
-  sni: blog.clova.line.me
+  sni: investors.spotify.com
   skip-cert-verify: true
 #  interface-name: eth1/eth2/wan/wwan0
 #=========================================
