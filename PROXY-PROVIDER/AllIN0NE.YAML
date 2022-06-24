@@ -64,3 +64,13 @@ proxies:
   sni: blog.clova.line.me
   skip-cert-verify: true
 #  interface-name: eth1/eth2/wan/wwan0
+#===================================TROJAN
+- name: Weekly-03
+  type: trojan
+  server: trojan2.udpgw.com
+  port: 443
+  password: 1ba39b80-f411-11ec-988a-1239d0255272
+  udp: true
+  sni: blog.clova.line.me
+  skip-cert-verify: true
+#  interface-name: eth1/eth2/wan/wwan0
