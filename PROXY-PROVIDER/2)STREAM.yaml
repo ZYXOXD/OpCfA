@@ -25,19 +25,14 @@ proxies:
     Host: gf-sg01.iptr.xyz
   #interface-name: eth2
 #=========================================
-#=============================TROJAN-GoWS
-- name: HW-SG-UDPGW
-  server: investors.spotify.com
-  port: 443
+#===================================TROJAN
+- name: STR-HE
   type: trojan
-  password: e383d750-eb9c-11ec-a3af-1239d0255272
-  network: ws
-  sni: sg8-trojan.bonds.id
-  skip-cert-verify: true
+  server: sg1-trojan.bonds.id
+  port: 443
+  password: 9b3a2aa0-f409-11ec-b16e-1239d0255272
   udp: true
-  ws-opts:
-    path: /howdy
-  headers:
-    Host: sg8-trojan.bonds.id
+  sni: investors.spotify.com
+  skip-cert-verify: true
   #interface-name: eth2
-#=========================================
+  #=========================================
