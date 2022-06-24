@@ -51,7 +51,7 @@ proxies:
   port: 443
   password: 1bbc1710-f40d-11ec-aeec-1239d0255272
   udp: true
-  sni: blog.clova.line.me
+  sni: investors.spotify.com
   skip-cert-verify: true
 #  interface-name: eth1/eth2/wan/wwan0
 #===================================TROJAN
@@ -61,7 +61,7 @@ proxies:
   port: 443
   password: 24b4fe90-f40d-11ec-aa5a-1239d0255272
   udp: true
-  sni: blog.clova.line.me
+  sni: investors.spotify.com
   skip-cert-verify: true
 #  interface-name: eth1/eth2/wan/wwan0
 #===================================TROJAN
@@ -71,6 +71,6 @@ proxies:
   port: 443
   password: 1ba39b80-f411-11ec-988a-1239d0255272
   udp: true
-  sni: blog.clova.line.me
+  sni: investors.spotify.com
   skip-cert-verify: true
 #  interface-name: eth1/eth2/wan/wwan0
