@@ -45,17 +45,14 @@ proxies:
     Host: sg3-trojan.bonds.id
 #  interface-name: eth1/eth2/wan/wwan0
 #=========================================
-#==============================TROJAN-gRPC
+#===================================TROJAN
 - name: UNIVA
+  type: trojan
   server: gf-sg01.iptr.xy
   port: 443
-  type: trojan
   password: 123xxx
-  network: grpc
-  sni: investors.spotify.com
-  skip-cert-verify: true
   udp: true
-  grpc-opts:
-    grpc-service-name: trojan-grpc
+  sni: blog.clova.line.me
+  skip-cert-verify: true
 #  interface-name: eth1/eth2/wan/wwan0
 #=========================================
