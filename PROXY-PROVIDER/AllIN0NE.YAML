@@ -1,57 +1,51 @@
 proxies:
 #=============================TROJAN-GoWS
-- name: HW-SG-HE1
+- name: Weekly-go1
   server: investors.spotify.com
   port: 443
   type: trojan
-  password: cb27a050-e5b7-11ec-97a1-1239d0255272
+  password: 08ccd0a0-f40d-11ec-a90e-1239d0255272
   network: ws
-  sni: sg1-trojan.bonds.id
+  sni: trojan2.udpgw.com
   skip-cert-verify: true
   udp: true
   ws-opts:
     path: /howdy
   headers:
-    Host: sg1-trojan.bonds.id
-#  interface-name: eth1/eth2/wan/wwan0
-#=============================TROJAN-GoWS
-- name: HW-SG-HE2
-  server: investors.spotify.com
-  port: 443
-  type: trojan
-  password: 0824f5a0-eb9d-11ec-939c-1239d0255272
-  network: ws
-  sni: sg1-trojan.bonds.id
-  skip-cert-verify: true
-  udp: true
-  ws-opts:
-    path: /howdy
-  headers:
-    Host: sg1-trojan.bonds.id
-#  interface-name: eth1/eth2/wan/wwan0
-#=============================TROJAN-GoWS
-- name: HW-SG-HE3
-  server: investors.spotify.com
-  port: 443
-  type: trojan
-  password: 757ce3d0-e5b8-11ec-82b7-1239d0255272
-  network: ws
-  sni: sg2-trojan.bonds.id
-  skip-cert-verify: true
-  udp: true
-  ws-opts:
-    path: /howdy
-  headers:
-    Host: sg2-trojan.bonds.id
+    Host: trojan2.udpgw.com
 #  interface-name: eth1/eth2/wan/wwan0
 #===================================TROJAN
-- name: HW-Weekly
+- name: Weekly-01
   type: trojan
-  server: trojan1.udpgw.com
+  server: trojan2.udpgw.com
   port: 443
-  password: 9bb479b0-ecf4-11ec-bfb6-1239d0255272
+  password: 1bbc1710-f40d-11ec-aeec-1239d0255272
   udp: true
   sni: investors.spotify.com
   skip-cert-verify: true
 #  interface-name: eth1/eth2/wan/wwan0
-#=========================================
+#=============================TROJAN-GoWS
+- name: Weekly-go2
+  server: blog.clova.line.me
+  port: 443
+  type: trojan
+  password: 329a2270-f40d-11ec-b09a-1239d0255272
+  network: ws
+  sni: trojan2.udpgw.com
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+  headers:
+    Host: trojan2.udpgw.com
+#  interface-name: eth1/eth2/wan/wwan0
+#===================================TROJAN
+- name: Weekly-02
+  type: trojan
+  server: trojan2.udpgw.com
+  port: 443
+  password: 24b4fe90-f40d-11ec-aa5a-1239d0255272
+  udp: true
+  sni: blog.clova.line.me
+  skip-cert-verify: true
+#  interface-name: eth1/eth2/wan/wwan0
