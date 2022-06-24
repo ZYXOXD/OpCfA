@@ -4,37 +4,67 @@ proxies:
   server: investors.spotify.com
   port: 443
   type: trojan
-  password: jagoanssh-ug6657tgyugu
+  password: jagoanssh-hn6ey65stg
   network: ws
-  sni: sg2go.ipservers.xyz
+  sni: sg1go.ipservers.xyz
   skip-cert-verify: true
   udp: true
   ws-opts:
     path: /trojan
   headers:
-    Host: sg2go.ipservers.xyz
+    Host: sg1go.ipservers.xyz
 #  interface-name: eth1/eth2/wan/wwan0
 #=============================TROJAN-GoWS
 - name: JG02
   server: investors.spotify.com
   port: 443
   type: trojan
-  password: jagoanssh-Crgy6g6gh444
+  password: jagoanssh-uy756787tgu
   network: ws
-  sni: sg2go.ipservers.xyz
+  sni: sg1go.ipservers.xyz
   skip-cert-verify: true
   udp: true
   ws-opts:
     path: /trojan
   headers:
-    Host: sg2go.ipservers.xyz
+    Host: sg1go.ipservers.xyz
 #  interface-name: eth1/eth2/wan/wwan0
 #=============================TROJAN-GoWS
-- name: JGFW
+- name: JG03
   server: investors.spotify.com
   port: 443
   type: trojan
-  password: jagoanssh-D5hi8yt6fyv
+  password: jagoanssh-Yys6wy2g
+  network: ws
+  sni: sg1go.ipservers.xyz
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan
+  headers:
+    Host: sg1go.ipservers.xyz
+#  interface-name: eth1/eth2/wan/wwan0
+#=============================TROJAN-GoWS
+- name: JGFW1
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: jagoanssh-Hu7y3hhe
+  network: ws
+  sni: sg2tro.ipservers.xyz
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan
+  headers:
+    Host: sg2tro.ipservers.xyz
+#  interface-name: eth1/eth2/wan/wwan0
+#=============================TROJAN-GoWS
+- name: JGFW2
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: jagoanssh-fu655ffg2w
   network: ws
   sni: sg2tro.ipservers.xyz
   skip-cert-verify: true
