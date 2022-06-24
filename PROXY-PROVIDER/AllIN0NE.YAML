@@ -14,19 +14,9 @@ proxies:
   headers:
     Host: trojan2.udpgw.com
 #  interface-name: eth1/eth2/wan/wwan0
-#===================================TROJAN
-- name: Weekly-01
-  type: trojan
-  server: trojan2.udpgw.com
-  port: 443
-  password: 1bbc1710-f40d-11ec-aeec-1239d0255272
-  udp: true
-  sni: investors.spotify.com
-  skip-cert-verify: true
-#  interface-name: eth1/eth2/wan/wwan0
 #=============================TROJAN-GoWS
 - name: Weekly-go2
-  server: blog.clova.line.me
+  server: investors.spotify.com
   port: 443
   type: trojan
   password: 329a2270-f40d-11ec-b09a-1239d0255272
@@ -38,6 +28,31 @@ proxies:
     path: /howdy
   headers:
     Host: trojan2.udpgw.com
+#  interface-name: eth1/eth2/wan/wwan0
+#=============================TROJAN-GoWS
+- name: Weekly-go3
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: 15a592b0-f40f-11ec-978e-1239d0255272
+  network: ws
+  sni: trojan2.udpgw.com
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+  headers:
+    Host: trojan2.udpgw.com
+#  interface-name: eth1/eth2/wan/wwan0
+#===================================TROJAN
+- name: Weekly-01
+  type: trojan
+  server: trojan2.udpgw.com
+  port: 443
+  password: 1bbc1710-f40d-11ec-aeec-1239d0255272
+  udp: true
+  sni: blog.clova.line.me
+  skip-cert-verify: true
 #  interface-name: eth1/eth2/wan/wwan0
 #===================================TROJAN
 - name: Weekly-02
