@@ -1,0 +1,52 @@
+#=========================================
+proxies:
+#===================================TROJAN
+- name: Weekly
+  type: trojan
+  server: trojan3.udpgw.com
+  port: 443
+  password: 313cb1f0-0396-11ed-b4f0-1239d0255272
+  udp: true
+  sni: investors.spotify.com
+  skip-cert-verify: true
+#=========================================
+#===================================TROJAN
+- name: JAGOAN-CTB
+  type: trojan
+  server: trojan-ctb-sg02.globalssh.xyz
+  port: 443
+  password: 123xxx
+  udp: true
+  sni: investors.spotify.com
+  skip-cert-verify: true
+#=========================================
+#==============================TROJAN-GoWS
+- name: Weekly-GO
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: 715793e0-0397-11ed-897c-1239d0255272
+  network: ws
+  sni: trojan3.udpgw.com
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+  headers:
+    Host: trojan3.udpgw.com
+#=========================================
+#==============================TROJAN-GoWS
+- name: JAGOAN-GF
+  server: investors.spotify.com
+  port: 443
+  type: trojan
+  password: 123xxx
+  network: ws
+  sni: trojan-gf-sg01.globalssh.xyz
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+  headers:
+    Host: trojan-gf-sg01.globalssh.xyz
+#=========================================
