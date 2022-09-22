@@ -10,17 +10,17 @@ proxies:
   skip-cert-verify: true
   udp: true
   ws-opts:
-    path: wss://blog.clova.line.me/trojan
+    path: /trojan
   headers:
     Host: sg2go.ipservers.xyz
 #=============================TROJAN-GoWS
 - name: JagoSSH2
-  server: 104.21.71.112
+  server: blog.clova.line.me
   port: 443
   type: trojan
   password: jagoanssh-Gt4ty5e
   network: ws
-  sni: blog.clova.line.me
+  sni: 104.21.71.112
   skip-cert-verify: true
   udp: true
   ws-opts:
