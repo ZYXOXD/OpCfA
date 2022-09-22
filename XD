@@ -1,0 +1,44 @@
+proxies:
+#=============================TROJAN-GoWS
+- name: JagoSSH1
+  server: 104.21.71.112
+  port: 443
+  type: trojan
+  password: jagoanssh-Bwu82uiwo9
+  network: ws
+  sni: blog.clova.line.me
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: wss://blog.clova.line.me/trojan
+  headers:
+    Host: sg2go.ipservers.xyz
+#=============================TROJAN-GoWS
+- name: JagoSSH2
+  server: 104.21.71.112
+  port: 443
+  type: trojan
+  password: jagoanssh-Gt4ty5e
+  network: ws
+  sni: blog.clova.line.me
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: wss://blog.clova.line.me/trojan
+  headers:
+    Host: sg2go.ipservers.xyz
+#=============================TROJAN-GoWS
+- name: Howdy-HE1
+  server: 104.21.71.112
+  port: 443
+  type: trojan
+  password: 9dbdbb10-3aa2-11ed-b50f-1239d0255272
+  network: ws
+  sni: blog.clova.line.me
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: wss://blog.clova.line.me/howdy
+  headers:
+    Host: sg1-trojan.bonds.id
+#=============================TROJAN-GoWS
